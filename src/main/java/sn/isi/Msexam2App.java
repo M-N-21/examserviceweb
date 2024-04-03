@@ -13,13 +13,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 import sn.isi.config.ApplicationProperties;
 import sn.isi.config.CRLFLogConverter;
 import tech.jhipster.config.DefaultProfileUtil;
 import tech.jhipster.config.JHipsterConstants;
 
 @SpringBootApplication
+@ComponentScan(basePackages = { "sn.isi.*" })
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
 public class Msexam2App {
 
