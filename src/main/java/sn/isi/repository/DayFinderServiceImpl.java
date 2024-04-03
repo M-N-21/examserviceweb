@@ -2,8 +2,10 @@ package sn.isi.repository;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import org.springframework.stereotype.Service;
 import sn.isi.service.DayFinderService;
 
+@Service
 public class DayFinderServiceImpl implements DayFinderService {
 
     @Override
